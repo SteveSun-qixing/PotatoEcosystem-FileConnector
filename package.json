@@ -1,0 +1,65 @@
+{
+  "name": "@chips/file-connector",
+  "version": "1.0.0",
+  "description": "薯片文件连接器 - 批量绑定外部资源到卡片的工具",
+  "main": "dist/main/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "test": "vitest",
+    "test:unit": "vitest run --config vitest.config.ts",
+    "test:coverage": "vitest run --coverage",
+    "test:watch": "vitest watch",
+    "lint": "eslint src --ext .ts,.tsx,.vue",
+    "lint:fix": "eslint src --ext .ts,.tsx,.vue --fix",
+    "type-check": "vue-tsc --noEmit",
+    "format": "prettier --write \"src/**/*.{ts,tsx,vue,scss}\"",
+    "prepare": "echo 'Chips-FileConnector ready'"
+  },
+  "dependencies": {
+    "@chips/sdk": "workspace:*",
+    "@chips/component-library": "workspace:*",
+    "@chips/foundation": "workspace:*",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "pinia": "^2.1.7",
+    "vue-i18n": "^9.10.2"
+  },
+  "devDependencies": {
+    "electron": "^29.1.0",
+    "electron-vite": "^2.0.0",
+    "vite": "^5.1.6",
+    "vitest": "^1.4.0",
+    "@vitest/coverage-v8": "^1.4.0",
+    "@vue/test-utils": "^2.4.4",
+    "typescript": "^5.4.2",
+    "vue-tsc": "^2.0.6",
+    "@types/node": "^20.11.25",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.71.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "prettier": "^3.2.5",
+    "happy-dom": "^13.6.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "chips",
+    "file-connector",
+    "card",
+    "resource",
+    "binding"
+  ],
+  "author": "Chips Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chips-ecosystem/chips-file-connector.git"
+  }
+}

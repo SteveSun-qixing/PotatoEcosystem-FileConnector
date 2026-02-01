@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+dist-electron/
+out/
+
+# IDE
+.idea/
+*.swp
+*.swo
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Test coverage
+coverage/
+
+# Electron
+release/
+
+# Temp files
+*.tmp
+*.temp
+.temp/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+.turbo/
+.eslintcache
