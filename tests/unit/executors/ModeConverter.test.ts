@@ -248,10 +248,14 @@ describe('ModeConverter', () => {
       sdk.fileExists.mockResolvedValue(false);
       sdk.updateCard.mockResolvedValue(undefined);
 
-      const onProgress = vi.fn();
-      await converter.toFull(['card1'], { onProgress });
+      let progressCalled = false;
+      converter.on('progress', () => {
+        progressCalled = true;
+      });
+      
+      await converter.toFull(['card1']);
 
-      expect(onProgress).toHaveBeenCalled();
+      expect(progressCalled).toBe(true);
     });
 
     it('不应该允许并发转换', async () => {
