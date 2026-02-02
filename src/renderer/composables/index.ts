@@ -11,3 +11,9 @@ export type { UseAutoMatchReturn } from './useAutoMatch';
 
 export { useSmartMatch } from './useSmartMatch';
 export type { UseSmartMatchReturn } from './useSmartMatch';
+
+export { useBindingExecute } from './useBindingExecute';
+export type { UseBindingExecuteReturn } from './useBindingExecute';
+
+export { useModeConvert } from './useModeConvert';
+export type { UseModeConvertReturn } from './useModeConvert';

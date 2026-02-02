@@ -4,3 +4,4 @@
  */
 
 export { default as FileSelector } from './FileSelector.vue';
+export { default as ProgressBar } from './ProgressBar.vue';
