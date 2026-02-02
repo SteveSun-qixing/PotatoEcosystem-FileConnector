@@ -33,6 +33,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      '@/stores': resolve(__dirname, 'src/renderer/stores'),
+      '@/composables': resolve(__dirname, 'src/renderer/composables'),
       '@': resolve(__dirname, 'src'),
       '@renderer': resolve(__dirname, 'src/renderer'),
       '@main': resolve(__dirname, 'src/main'),

@@ -52,7 +52,17 @@ export default {
     clearBindings: '清空绑定',
     batchFolder: '批量设置文件夹',
     dragHint: '拖拽文件到此处',
-    connectHint: '点击卡片再点击文件创建连接'
+    connectHint: '点击卡片再点击文件创建连接',
+    clearConnections: '清空连线',
+    deleteSelected: '删除选中',
+    autoArrange: '自动排列',
+    fitToView: '适应视图',
+    resetView: '重置视图',
+    zoomIn: '放大',
+    zoomOut: '缩小',
+    importConfig: '导入配置',
+    exportConfig: '导出配置',
+    graphHint: '滚轮缩放 · 右键/中键拖拽平移 · Delete删除选中'
   },
   auto: {
     title: '自动识别',
@@ -86,6 +96,21 @@ export default {
     modified: '修改',
     deleted: '删除'
   },
+  fileSelector: {
+    selectFile: '选择文件...',
+    browse: '浏览',
+    dropHere: '释放以选择文件',
+    invalidType: '不支持的文件类型'
+  },
+  bindingTable: {
+    cardColumn: '卡片',
+    fileColumn: '绑定文件',
+    statusColumn: '状态',
+    actionsColumn: '操作',
+    batchRemove: '批量删除',
+    clearAll: '清空全部',
+    showingCount: '显示 {count}/{total}'
+  },
   convert: {
     title: '模式转换',
     toFull: '转为全填充',
@@ -99,6 +124,76 @@ export default {
     cardsSelected: '已选择 {count} 个卡片',
     filesSelected: '已选择 {count} 个文件',
     bindingCount: '已绑定 {bound}/{total}'
+  },
+  card: {
+    type: {
+      video: '视频',
+      audio: '音频',
+      image: '图片',
+      document: '文档',
+      text: '文本',
+      custom: '自定义'
+    },
+    filter: {
+      all: '全部'
+    },
+    sort: {
+      name: '名称',
+      status: '状态'
+    },
+    empty: {
+      noCards: '暂无卡片',
+      noMatch: '没有匹配的卡片'
+    }
+  },
+  file: {
+    type: {
+      video: '视频',
+      audio: '音频',
+      image: '图片',
+      document: '文档',
+      subtitle: '字幕',
+      archive: '压缩包',
+      other: '其他'
+    },
+    status: {
+      used: '已使用',
+      unused: '未使用'
+    },
+    filter: {
+      all: '全部',
+      allTypes: '所有类型'
+    },
+    sort: {
+      name: '名称',
+      size: '大小',
+      date: '日期',
+      type: '类型'
+    },
+    stats: {
+      count: '显示 {count}/{total} 个文件',
+      size: '总大小 {size}',
+      used: '已使用 {count} 个'
+    },
+    empty: {
+      noFiles: '暂无文件',
+      noMatch: '没有匹配的文件',
+      hint: '拖拽文件到此处添加'
+    },
+    dropHint: '释放以添加文件',
+    detail: {
+      type: '类型',
+      extension: '扩展名',
+      size: '大小',
+      mimeType: 'MIME类型',
+      createdAt: '创建时间',
+      modifiedAt: '修改时间',
+      path: '文件路径',
+      directory: '所在目录'
+    },
+    preview: {
+      selectFile: '选择文件查看详情'
+    }
   },
   error: {
     fileNotFound: '文件不存在',

@@ -52,7 +52,17 @@ export default {
     clearBindings: 'Clear Bindings',
     batchFolder: 'Batch Set Folder',
     dragHint: 'Drag files here',
-    connectHint: 'Click card then click file to create connection'
+    connectHint: 'Click card then click file to create connection',
+    clearConnections: 'Clear Connections',
+    deleteSelected: 'Delete Selected',
+    autoArrange: 'Auto Arrange',
+    fitToView: 'Fit to View',
+    resetView: 'Reset View',
+    zoomIn: 'Zoom In',
+    zoomOut: 'Zoom Out',
+    importConfig: 'Import Config',
+    exportConfig: 'Export Config',
+    graphHint: 'Scroll to zoom · Right/Middle click to pan · Delete to remove'
   },
   auto: {
     title: 'Auto Match',
@@ -86,6 +96,21 @@ export default {
     modified: 'Modified',
     deleted: 'Deleted'
   },
+  fileSelector: {
+    selectFile: 'Select file...',
+    browse: 'Browse',
+    dropHere: 'Drop to select file',
+    invalidType: 'Unsupported file type'
+  },
+  bindingTable: {
+    cardColumn: 'Card',
+    fileColumn: 'Bound File',
+    statusColumn: 'Status',
+    actionsColumn: 'Actions',
+    batchRemove: 'Batch Remove',
+    clearAll: 'Clear All',
+    showingCount: 'Showing {count}/{total}'
+  },
   convert: {
     title: 'Mode Convert',
     toFull: 'Convert to Full',
@@ -99,6 +124,76 @@ export default {
     cardsSelected: '{count} cards selected',
     filesSelected: '{count} files selected',
     bindingCount: 'Bound {bound}/{total}'
+  },
+  card: {
+    type: {
+      video: 'Video',
+      audio: 'Audio',
+      image: 'Image',
+      document: 'Document',
+      text: 'Text',
+      custom: 'Custom'
+    },
+    filter: {
+      all: 'All'
+    },
+    sort: {
+      name: 'Name',
+      status: 'Status'
+    },
+    empty: {
+      noCards: 'No cards',
+      noMatch: 'No matching cards'
+    }
+  },
+  file: {
+    type: {
+      video: 'Video',
+      audio: 'Audio',
+      image: 'Image',
+      document: 'Document',
+      subtitle: 'Subtitle',
+      archive: 'Archive',
+      other: 'Other'
+    },
+    status: {
+      used: 'Used',
+      unused: 'Unused'
+    },
+    filter: {
+      all: 'All',
+      allTypes: 'All Types'
+    },
+    sort: {
+      name: 'Name',
+      size: 'Size',
+      date: 'Date',
+      type: 'Type'
+    },
+    stats: {
+      count: 'Showing {count}/{total} files',
+      size: 'Total size {size}',
+      used: '{count} used'
+    },
+    empty: {
+      noFiles: 'No files',
+      noMatch: 'No matching files',
+      hint: 'Drag files here to add'
+    },
+    dropHint: 'Drop to add files',
+    detail: {
+      type: 'Type',
+      extension: 'Extension',
+      size: 'Size',
+      mimeType: 'MIME Type',
+      createdAt: 'Created',
+      modifiedAt: 'Modified',
+      path: 'File Path',
+      directory: 'Directory'
+    },
+    preview: {
+      selectFile: 'Select a file to preview'
+    }
   },
   error: {
     fileNotFound: 'File not found',
