@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@chips/sdk": "workspace:*",
-    "@chips/component-library": "workspace:*",
+    "@chips/components": "workspace:*",
     "@chips/foundation": "workspace:*",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
